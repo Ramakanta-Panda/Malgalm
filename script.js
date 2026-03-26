@@ -1,34 +1,34 @@
-const navbar = document.getElementById("navbar");
+// const navbar = document.getElementById("navbar");
 
-let lastScroll = 0;
+// let lastScroll = 0;
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
 
-    const currentScroll = window.pageYOffset;
+//     const currentScroll = window.pageYOffset;
 
-    /* Always show navbar at top */
-    if (currentScroll < 50) {
-        navbar.classList.add("show");
-        return;
-    }
+//     /*  navbar at top */
+//     if (currentScroll < 50) {
+//         navbar.classList.add("show");
+//         return;
+//     }
 
-    /* Activate sticky behavior after first fold */
-    if (currentScroll > window.innerHeight) {
+//     /* Activate sticky behavior after first fold */
+//     if (currentScroll > window.innerHeight) {
 
-        if (currentScroll > lastScroll) {
-            /* Scrolling down */
-            navbar.classList.remove("show");
+//         if (currentScroll > lastScroll) {
+//             /* Scrolling down */
+//             navbar.classList.remove("show");
 
-        } else {
-            /* Scrolling up */
-            navbar.classList.add("show");
-        }
+//         } else {
+//             /* Scrolling up */
+//             navbar.classList.add("show");
+//         }
 
-    }
+//     }
 
-    lastScroll = currentScroll;
+//     lastScroll = currentScroll;
 
-});
+// });
 
 /* DROPDOWN FOR MOBILE */
 
